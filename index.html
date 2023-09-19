@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Tech Startup</title>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <img src="/assets/logo.svg" alt="logo">
+            <img src="./assets/logo.svg" alt="logo" class="logo" role="img">
 
-            <ul class="nav__list">
+            <ul class="navbar-list">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Pages</a></li>
@@ -21,166 +22,205 @@
 
             </ul>
 
-            <div>
-                <button>Sign In</button>
+            <div class="navbar-links">
+                <a href="#">Sign In</a>
                 <button>Get Started Free</button>
             </div>
         </nav>
     </header>
     <main>
         <section class="hero">
-            <div>
-                <img src="/assets/asterisk.svg" alt="asterisk">
+            <div class="hero-top">
+                <img src="./assets/asterisk.svg" alt="asterisk">
                 <p>World Best Startup</p>
+                <hr color="white" size="1" />
             </div>
             <h1>Best Tech Startup Ever</h1>
-            <p>Coca is a startup that's making the world a better place! We've been working on our mission since 2021
+            <p class="hero-description">Coca is a startup that's making the world a better place! <br /> We've been
+                working on
+                our mission since 2021
             </p>
 
-            <div>
+            <div class="hero-bottom">
                 <button>
                     <span>Meet The Expert</span>
-                    <img src="/assets/arrow-up-right.svg" alt="arrow up right">
+                    <img src="./assets/arrow-up-right.svg" alt="arrow up right">
                 </button>
-                <div>
-                    <img src="/assets/arrow-right.svg" alt="right arrow">
-                    <p>Today, we're a team of 200+ who are building the future together by using cutting-edge technology
-                    </p>
+                <div class="hero-bottom-text">
+                    <img src="./assets/arrow-right.svg" alt="right arrow">
+                    <span>Today, we're a team of 200+ who are building the future together by using cutting-edge
+                        technology
+                    </span>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2>Delivering tech solutions</h2>
-            <p>We are a team of 20+ who are passionate about making the world a better place.</p>
+        <section class="message">
+            <div class="message-top">
+                <h3>Delivering tech <br /> solutions</h3>
+                <p>We are a team of 20+ who are passionate about making the world a better place.</p>
+            </div>
 
-            <div>
-                <div>
-                    <p>Ready for future</p>
-                    <h3>Leveraging tech to drive a better IT experience</h3>
+            <div class="message-blocks-container">
+                <div class="message-block">
+                    <div class="heading">
+                        <p>Ready for future</p>
+                        <h3>Leveraging tech to drive a better IT experience</h3>
+                    </div>
+
                     <button>
                         <span>See Incredible Work</span>
-                        <img src="/assets/arrow-up-right.svg" alt="arrow up right">
+                        <img src="./assets/arrow-up-right.svg" alt="arrow up right">
                     </button>
                 </div>
 
-                <div>
+                <div class="message-block">
                     <p>We have share our journey and some story</p>
-                    <h3>Read our blog</h3>
-                    <img src="/assets/arrow-up-right.svg" alt="arrow up right">
+
+                    <div class="heading">
+                        <h3>Read our blog</h3>
+                        <img src="./assets/arrow-up-right.svg" alt="arrow up right">
+                    </div>
                 </div>
 
-                <div>
+                <div class="message-block">
                     <p>It’s a must to that we would like to share our workflow to believe you</p>
-                    <h3>See our workflow</h3>
-                    <img src="/assets/arrow-up-right.svg" alt="arrow up right">
+                    <div class="heading">
+                        <h3>See our workflow</h3>
+                        <img src="./assets/arrow-up-right.svg" alt="arrow up right">
+                    </div>
                 </div>
 
-                <div>
+                <div class="message-block">
                     <p>2,000+ our team members around the world who create incredible and amazing projects</p>
-                    <h3>Meet Our Expert</h3>
-                    <img src="/assets/arrow-up-right.svg" alt="arrow up right">
+                    <div class="heading">
+                        <h3>Meet Our Expert</h3>
+                        <img src="./assets/arrow-up-right.svg" alt="arrow up right">
+                    </div>
                 </div>
             </div>
 
             <div class="message-plan">
                 <div class="sales-report">
-                    <img src="/assets/sales graphics.png" alt="sales graphics">
-                    <div>
-                        <p>Sales</p>
-                        <p>$31,092</p>
-                        <p><span>&uarr; 4.2%</span> from last year</p>
+                    <div class="graphics">
+                        <h4>Sales Report</h4>
+                        <img src="./assets/Sales Figures.png" alt="month graphics">
                     </div>
-                    <div>
-                        <p>Marketing</p>
-                        <p>$29,128</p>
-                        <p><span>&uarr; 2.1%</span> from last year</p>
+
+                    <div class="graphics-footer">
+                        <div>
+                            <p>Sales</p>
+                            <strong>$31,092</strong>
+                            <p><span>&uarr; 4.2%</span> from last year</p>
+                        </div>
+                        <div>
+                            <p>Marketing</p>
+                            <strong>$29,128</strong>
+                            <p><span>&uarr; 2.1%</span> from last year</p>
+                        </div>
                     </div>
                 </div>
 
-                <div>
+                <div class="sales-plan">
                     <h2>How we plan to disrupt the industry</h2>
-                    <p>We're based in NYC, which is home to so many great companies and communities, but it's also where
+                    <p>We're based in NYC, which is home to so many great companies and communities, but it's also
+                        where
                         we started out as a bootstrapped team of two people working from their apartments. </p>
 
                     <ul>
-                        <li>Agile web design and development methodology</li>
-                        <li>Award winning web solutions and sites</li>
-                        <li>Competitive rates for web design and development talent</li>
+                        <li><img src="./assets/green-check.svg" /> <span> Agile web design and development
+                                methodology</span></li>
+                        <li><img src="./assets/green-check.svg" /> <span>Award winning web solutions and sites</span>
+                        </li>
+                        <li><img src="./assets/green-check.svg" /> <span>Competitive rates for web design and
+                                development
+                                talent</span></li>
                     </ul>
                 </div>
             </div>
 
             <div class="advantages">
-                <div>
+                <div class="col">
                     <h2>Why we are different from other startups </h2>
-                    <p>With us you can create a mobile app for your business in 2 weeks as well as create a website for
+                    <p>With us you can create a mobile app for your business in 2 weeks as well as create a website
+                        for
                         your business in 2 days.</p>
 
-                    <div>
-                        <img src="" alt="avatar">
-                        <strong>1.289</strong>
-                        <p>Our Remote Team</p>
+                    <div class="avatar-wrapper">
+                        <div class="avatar-container">
+                            <img src="./assets/avatar-3.png" alt="avatar">
+                            <img src="./assets/avatar-1.png" alt="avatar">
+                            <img src="./assets/avatar-2.png" alt="avatar">
+                        </div>
+                        <div class="avatar-text">
+                            <strong>1.289</strong>
+                            <p>Our Remote Team</p>
+                        </div>
                     </div>
                 </div>
 
-                <video src="#"></video>
+                <iframe width="436" height="480" src="https://www.youtube.com/embed/rNSIwjmynYQ?si=kd1nujN7ljPbWvLr"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
             </div>
 
-            <ul>
-                <li><img src="/assets/companies-1.png" alt="company logo"></li>
-                <li><img src="/assets/companies-2.png" alt="company logo"></li>
-                <li><img src="/assets/companies-3.png" alt="company logo"></li>
-                <li><img src="/assets/companies-4.png" alt="company logo"></li>
-                <li><img src="/assets/companies-5.png" alt="company logo"></li>
-                <li><img src="/assets/companies-6.png" alt="company logo"></li>
+            <ul class="logo-list">
+                <li><img src="./assets/companies-1.png" alt="company logo"></li>
+                <li><img src="./assets/companies-2.png" alt="company logo"></li>
+                <li><img src="./assets/companies-3.png" alt="company logo"></li>
+                <li><img src="./assets/companies-4.png" alt="company logo"></li>
+                <li><img src="./assets/companies-5.png" alt="company logo"></li>
+                <li><img src="./assets/companies-6.png" alt="company logo"></li>
             </ul>
         </section>
 
         <section class="plans">
-            <h2>Inspiring possibility and applying innovation</h2>
-            <p>Started today. We're ready!</p>
+            <div class="plans-heading">
+                <h2>Inspiring possibility and applying innovation</h2>
+                <p>Started today. We're ready!</p>
+            </div>
 
             <div class="card-container">
                 <div class="card">
                     <h4>SILVER</h4>
-                    <h2>
-                        <strong>$50</strong>/month
-                    </h2>
+                    <strong>$50</strong> <span>/month</span>
 
                     <ul class="card-list">
-                        <li>No Discount</li>
-                        <li>Basic Support</li>
-                        <li>Ads Banner Free</li>
-                        <li>Design Style </li>
-                        <li>Component Library</li>
-                        <li>All limited links</li>
-                        <li>Own analytics platform</li>
-                        <li>Chat support</li>
-                        <li>Optimize hashtags</li>
-                        <li>Unlimited users</li>
+                        <li><img src="./assets/green-check.svg" />No Discount</li>
+                        <li><img src="./assets/green-check.svg" />Basic Support</li>
+                        <li><img src="./assets/green-check.svg" />Ads Banner Free</li>
+                        <li><img src="./assets/green-check.svg" />Design Style </li>
+                        <li><img src="./assets/green-check.svg" />Component Library</li>
+                        <li><img src="./assets/green-check.svg" />All limited links</li>
+                        <li><img src="./assets/green-check.svg" />Own analytics platform</li>
+                        <li><img src="./assets/green-check.svg" />Chat support</li>
+                        <li><img src="./assets/green-check.svg" />Optimize hashtags</li>
+                        <li><img src="./assets/green-check.svg" />Unlimited users</li>
                     </ul>
 
                     <button>Choose plan</button>
                 </div>
 
                 <div class="card">
+                    <div class="card-header">MOST POPULAR</div>
+
                     <h4>GOLD</h4>
                     <h2>
-                        <strong>$100</strong>/month
+                        <strong>$100</strong> <span>/month</span>
                     </h2>
 
                     <ul class="card-list">
-                        <li>No Discount</li>
-                        <li>Basic Support</li>
-                        <li>Ads Banner Free</li>
-                        <li>Design Style </li>
-                        <li>Component Library</li>
-                        <li>All limited links</li>
-                        <li>Own analytics platform</li>
-                        <li>Chat support</li>
-                        <li>Optimize hashtags</li>
-                        <li>Unlimited users</li>
+                        <li><img src="./assets/blue-check.svg" />No Discount</li>
+                        <li><img src="./assets/blue-check.svg" />Basic Support</li>
+                        <li><img src="./assets/blue-check.svg" />Ads Banner Free</li>
+                        <li><img src="./assets/blue-check.svg" />Design Style </li>
+                        <li><img src="./assets/blue-check.svg" />Component Library</li>
+                        <li><img src="./assets/blue-check.svg" />All limited links</li>
+                        <li><img src="./assets/blue-check.svg" />Own analytics platform</li>
+                        <li><img src="./assets/blue-check.svg" />Chat support</li>
+                        <li><img src="./assets/blue-check.svg" />Optimize hashtags</li>
+                        <li><img src="./assets/blue-check.svg" />Unlimited users</li>
                     </ul>
 
                     <button>Choose plan</button>
@@ -189,20 +229,20 @@
                 <div class="card">
                     <h4>PREMIUM</h4>
                     <h2>
-                        <strong>$150</strong>/month
+                        <strong>$150</strong> <span>/month</span>
                     </h2>
 
                     <ul class="card-list">
-                        <li>No Discount</li>
-                        <li>Basic Support</li>
-                        <li>Ads Banner Free</li>
-                        <li>Design Style </li>
-                        <li>Component Library</li>
-                        <li>All limited links</li>
-                        <li>Own analytics platform</li>
-                        <li>Chat support</li>
-                        <li>Optimize hashtags</li>
-                        <li>Unlimited users</li>
+                        <li><img src="./assets/green-check.svg" /> No Discount</li>
+                        <li><img src="./assets/green-check.svg" /> Basic Support</li>
+                        <li><img src="./assets/green-check.svg" /> Ads Banner Free</li>
+                        <li><img src="./assets/green-check.svg" /> Design Style </li>
+                        <li><img src="./assets/green-check.svg" /> Component Library</li>
+                        <li><img src="./assets/green-check.svg" /> All limited links</li>
+                        <li><img src="./assets/green-check.svg" /> Own analytics platform</li>
+                        <li><img src="./assets/green-check.svg" /> Chat support</li>
+                        <li><img src="./assets/green-check.svg" /> Optimize hashtags</li>
+                        <li><img src="./assets/green-check.svg" /> Unlimited users</li>
                     </ul>
 
                     <button>Choose plan</button>
@@ -211,29 +251,33 @@
         </section>
 
         <section class="reviews">
-            <img src="/assets/asterisk.svg" alt="asterisk">
+            <img src="./assets/asterisk.svg" alt="asterisk" class="asterisk">
 
             <h2>Customer is Our Top Priority</h2>
             <p>We survey all of our clients, the results of which go directly to our CEO.</p>
 
-            <div>
-                <img src="/assets/person.png" alt="person">
-                <h3>“Amazing experience working together Coca Team. They are very passionate.”</h3>
-
-                <p>— Suaka Marga Satwa Product Manager, Kpop</p>
-            </div>
-        </section>
-        <footer>
-            <div>
-                <img src="/assets/logo-2.svg" alt="logo">
-
-                <div>
-                    <p>Ready to get started?</p>
-                    <button>Get Started</button>
+            <div class="slide-container">
+                <img src="./assets/person.png" alt="person">
+                <div class="slide-text">
+                    <h3>“Amazing experience working together Coca Team. They are very passionate.”</h3>
+                    <b>— Suaka Marga Satwa</b>
+                    <p>Product Manager, Kpop</p>
                 </div>
             </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <img src="./assets/logo-2.svg" alt="logo">
 
-            <div>
+            <div class="text">
+                <p>Ready to get started?</p>
+                <button>Get Started</button>
+            </div>
+        </div>
+
+        <div class="footer-middle">
+            <div class="email">
                 <h4>Subscribe to our newsletter</h4>
                 <input type="text" placeholder="Email address">
                 <button>
@@ -245,7 +289,7 @@
                 </button>
             </div>
 
-            <div>
+            <div class="footer-list">
                 <h4>Services</h4>
                 <ul>
                     <li>Email Marketing</li>
@@ -255,7 +299,7 @@
                 </ul>
             </div>
 
-            <div>
+            <div class="footer-list">
                 <h4>About</h4>
                 <ul>
                     <li>Our Story</li>
@@ -265,7 +309,7 @@
                 </ul>
             </div>
 
-            <div>
+            <div class="footer-list">
                 <h4>Help</h4>
                 <ul>
                     <li>FAQs</li>
@@ -273,25 +317,28 @@
                 </ul>
             </div>
 
+
+        </div>
+
+        <div class="footer-bottom">
             <div>
                 <p>Terms & Conditions</p>
                 <p>Privacy Policy</p>
             </div>
-
-            <div>
+            <div class="links">
                 <a href="#">
-                    <img src="/assets/001-facebook.svg" alt="facebook">
+                    <img src="./assets/001-facebook.svg" alt="facebook">
                 </a>
                 <a href="#">
-                    <img src="/assets/003-twitter.svg" alt="twitter">
+                    <img src="./assets/003-twitter.svg" alt="twitter">
                 </a>
                 <a href="#">
-                    <img src="/assets/004-instagram.svg" alt="instagram">
+                    <img src="./assets/004-instagram.svg" alt="instagram">
                 </a>
             </div>
+        </div>
 
-        </footer>
-    </main>
+    </footer>
 </body>
 
 </html>
