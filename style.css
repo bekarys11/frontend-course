@@ -4,6 +4,33 @@
 :root {
     --main-green: #A7F46A;
     --neutral-100: #101010;
+
+}
+
+
+
+.btn-primary {
+    --bs-btn-color: #101010;
+    --bs-btn-bg: #A7F46A;
+    --bs-btn-hover-color: #101010;
+    --bs-btn-hover-bg: #6dd319;
+    --bs-btn-padding-x: 2rem;
+    --bs-btn-padding-y: 1rem;
+    --bs-btn-border-radius: 0.5rem;
+    --bs-btn-font-weight: 700;
+}
+
+.btn-light {
+    --bs-btn-color: #2A85FF;
+}
+
+.list-group {
+    --bs-border-color: transparent;
+}
+
+.list-group-item {
+    --bs-list-group-item-padding-x: 0;
+
 }
 
 html,
@@ -97,13 +124,13 @@ header {
     font-weight: 700;
 }
 
-.navbar-links button {
+/* .navbar-links button {
     border-radius: 8px;
     padding: 16px 32px;
     margin-left: 32px;
     color: var(--neutral-100);
     background-color: var(--main-green);
-}
+} */
 
 
 /* SECTION HERO */
@@ -158,7 +185,7 @@ header {
     margin-top: 48px;
 }
 
-.hero-bottom button {
+/* .hero-bottom button {
     background-color: var(--main-green);
     padding: 16px 24px;
     font-weight: 700;
@@ -168,7 +195,7 @@ header {
 
 .hero-bottom button > * {
     vertical-align: middle;
-}
+} */
 
 
 .hero-bottom-text {
@@ -211,7 +238,7 @@ header {
 
 .message-blocks-container {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 28px;
     margin-top: 106px;
@@ -469,7 +496,9 @@ header {
     color: #757B8A;
 }
 
-.card-container {
+/* CARD */
+
+/* .card-container {
     width: fit-content;
     position: relative;
     margin-top: 112px;
@@ -568,7 +597,7 @@ header {
 .card-list li {
     display: flex;
     gap: 10px;
-}
+} */
 
 
 /* REVIEWS */

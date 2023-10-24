@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./style.css">
     <title>Tech Startup</title>
 </head>
@@ -24,7 +27,7 @@
 
             <div class="navbar-links">
                 <a href="#">Sign In</a>
-                <button>Get Started Free</button>
+                <button class="btn btn-primary">Get Started Free</button>
             </div>
         </nav>
     </header>
@@ -42,7 +45,7 @@
             </p>
 
             <div class="hero-bottom">
-                <button>
+                <button class="btn btn-primary" style="--bs-btn-padding-x: 1.5rem;">
                     <span>Meet The Expert</span>
                     <img src="./assets/arrow-up-right.svg" alt="arrow up right">
                 </button>
@@ -100,42 +103,50 @@
                 </div>
             </div>
 
-            <div class="message-plan">
-                <div class="sales-report">
-                    <div class="graphics">
-                        <h4>Sales Report</h4>
-                        <img src="./assets/Sales Figures.png" alt="month graphics">
+            <div class="mt-5">
+                <div class="row">
+                    <div class="col">
+                        <div class="sales-report mx-auto">
+                            <div class="graphics">
+                                <h4>Sales Report</h4>
+                                <img src="./assets/Sales Figures.png" alt="month graphics">
+                            </div>
+
+                            <div class="graphics-footer">
+                                <div>
+                                    <p>Sales</p>
+                                    <strong>$31,092</strong>
+                                    <p><span>&uarr; 4.2%</span> from last year</p>
+                                </div>
+                                <div>
+                                    <p>Marketing</p>
+                                    <strong>$29,128</strong>
+                                    <p><span>&uarr; 2.1%</span> from last year</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="graphics-footer">
-                        <div>
-                            <p>Sales</p>
-                            <strong>$31,092</strong>
-                            <p><span>&uarr; 4.2%</span> from last year</p>
-                        </div>
-                        <div>
-                            <p>Marketing</p>
-                            <strong>$29,128</strong>
-                            <p><span>&uarr; 2.1%</span> from last year</p>
+                    <div class="col">
+                        <div class="sales-plan">
+                            <h2>How we plan to disrupt the industry</h2>
+                            <p>We're based in NYC, which is home to so many great companies and communities, but it's
+                                also
+                                where
+                                we started out as a bootstrapped team of two people working from their apartments. </p>
+
+                            <ul>
+                                <li><img src="./assets/green-check.svg" /> <span> Agile web design and development
+                                        methodology</span></li>
+                                <li><img src="./assets/green-check.svg" /> <span>Award winning web solutions and
+                                        sites</span>
+                                </li>
+                                <li><img src="./assets/green-check.svg" /> <span>Competitive rates for web design and
+                                        development
+                                        talent</span></li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-
-                <div class="sales-plan">
-                    <h2>How we plan to disrupt the industry</h2>
-                    <p>We're based in NYC, which is home to so many great companies and communities, but it's also
-                        where
-                        we started out as a bootstrapped team of two people working from their apartments. </p>
-
-                    <ul>
-                        <li><img src="./assets/green-check.svg" /> <span> Agile web design and development
-                                methodology</span></li>
-                        <li><img src="./assets/green-check.svg" /> <span>Award winning web solutions and sites</span>
-                        </li>
-                        <li><img src="./assets/green-check.svg" /> <span>Competitive rates for web design and
-                                development
-                                talent</span></li>
-                    </ul>
                 </div>
             </div>
 
@@ -182,28 +193,34 @@
             </div>
 
             <div class="card-container">
-                <div class="card">
-                    <h4>SILVER</h4>
-                    <strong>$50</strong> <span>/month</span>
+                <div class="card w-25 d-inline-block rounded-4 p-2">
+                    <div class="card-body">
+                        <h4 class="card-subtitle text-secondary fs-6">SILVER</h4>
+                        <p class="card-title"><strong class="fs-2">$50</strong> <span>/month</span></p>
+                        <ul class="list-group">
+                            <li class="list-group-item"><img src="./assets/green-check.svg" />No Discount</li>
+                            <li class="list-group-item"><img src="./assets/green-check.svg" />Basic Support</li>
+                            <li class="list-group-item"><img src="./assets/green-check.svg" />Ads Banner Free</li>
+                            <li class="list-group-item"><img src="./assets/green-check.svg" />Design Style </li>
+                            <li class="list-group-item"><img src="./assets/green-check.svg" />Component Library
+                            </li>
+                            <li class="list-group-item"><img src="./assets/green-check.svg" />All limited links
+                            </li>
+                            <li class="list-group-item"><img src="./assets/green-check.svg" />Own analytics
+                                platform
+                            </li>
+                            <li class="list-group-item"><img src="./assets/green-check.svg" />Chat support</li>
+                            <li class="list-group-item"><img src="./assets/green-check.svg" />Optimize hashtags
+                            </li>
+                            <li class="list-group-item"><img src="./assets/green-check.svg" />Unlimited users</li>
+                        </ul>
 
-                    <ul class="card-list">
-                        <li><img src="./assets/green-check.svg" />No Discount</li>
-                        <li><img src="./assets/green-check.svg" />Basic Support</li>
-                        <li><img src="./assets/green-check.svg" />Ads Banner Free</li>
-                        <li><img src="./assets/green-check.svg" />Design Style </li>
-                        <li><img src="./assets/green-check.svg" />Component Library</li>
-                        <li><img src="./assets/green-check.svg" />All limited links</li>
-                        <li><img src="./assets/green-check.svg" />Own analytics platform</li>
-                        <li><img src="./assets/green-check.svg" />Chat support</li>
-                        <li><img src="./assets/green-check.svg" />Optimize hashtags</li>
-                        <li><img src="./assets/green-check.svg" />Unlimited users</li>
-                    </ul>
-
-                    <button>Choose plan</button>
+                        <button class="btn btn-light fw-semibold mt-4">Choose plan</button>
+                    </div>
                 </div>
 
-                <div class="card">
-                    <div class="card-header">MOST POPULAR</div>
+                <div class="card w-25 text-white d-inline-block rounded-4" style="--bs-card-bg: #1B1AFF">
+                    <div class="">MOST POPULAR</div>
 
                     <h4>GOLD</h4>
                     <h2>
@@ -226,7 +243,7 @@
                     <button>Choose plan</button>
                 </div>
 
-                <div class="card">
+                <div class="card w-25 d-inline-block rounded-4">
                     <h4>PREMIUM</h4>
                     <h2>
                         <strong>$150</strong> <span>/month</span>
@@ -340,5 +357,8 @@
 
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
 </html>
