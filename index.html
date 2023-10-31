@@ -4,11 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    gridTemplateRows: {
+                        'sidebar': '15% 70% 15%'
+                    }
+                }
+            }
+        }
+    </script>
     <title>Dashboard</title>
 </head>
 
 <body>
+    <main class="grid p-[30px] grid-cols-3 w-screen h-screen bg-[#F2F8FD]">
+        <div class="pl-[75px] grid grid-rows-sidebar">
+            <img src="./assets/icons/logo.svg" alt="logo">
+            <ul class="flex flex-col gap-16">
+                <li class="flex gap-3.5">
+                    <img src="./assets/icons/house.svg" alt="">
+                    <p>Dashboard</p>
+                </li>
+                <li class="flex gap-3.5">
+                    <img src="./assets/icons/note-2.svg" alt="">
+                    <p>Note’s</p>
+                </li>
+                <li class="flex gap-3.5">
+                    <img src="./assets/icons/moon.svg" alt="">
+                    <p>Theme</p>
+                </li>
+                <li class="flex gap-3.5">
+                    <img src="./assets/icons/moon.svg" alt="">
+                    <p>Account</p>
+                </li>
+                <li class="flex gap-3.5">
+                    <img src="./assets/icons/moon.svg" alt="">
+                    <p>Explore</p>
+                </li>
+                <li class="flex gap-3.5">
+                    <img src="./assets/icons/moon.svg" alt="">
+                    <p>Graph</p>
+                </li>
+                <li class="flex gap-3.5">
+                    <img src="./assets/icons/moon.svg" alt="">
+                    <p>Messages</p>
+                </li>
+                <li class="flex gap-3.5">
+                    <img src="./assets/icons/moon.svg" alt="">
+                    <p>Setting</p>
+                </li>
+            </ul>
 
+            <div class="flex gap-3.5">
+                <img src="./assets/icons/logout.svg" width="20" height="20" alt="">
+                <p>Sign Out</p>
+            </div>
+        </div>
+        <div>body</div>
+        <div>add</div>
+    </main>
 </body>
 
 </html>
