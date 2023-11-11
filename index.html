@@ -5,22 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    gridTemplateRows: {
-                        'sidebar': '15% 70% 15%'
-                    }
-                }
-            }
-        }
-    </script>
     <title>Dashboard</title>
 </head>
-
-<body>
-    <main class="grid p-[30px] grid-cols-3 w-screen h-screen bg-[#F2F8FD]">
+<body class="box-border w-[1700px] h-[1137px] pb-33px">
+    <main class="grid p-[30px] grid-cols-[auto_auto_auto] bg-[#F2F8FD]">
         <div class="pl-[75px] grid grid-rows-sidebar">
             <img src="./assets/icons/logo.svg" alt="logo">
             <ul class="flex flex-col gap-16">
@@ -37,34 +25,199 @@
                     <p>Theme</p>
                 </li>
                 <li class="flex gap-3.5">
-                    <img src="./assets/icons/moon.svg" alt="">
+                    <img src="./assets/icons/profile.svg" alt="">
                     <p>Account</p>
                 </li>
                 <li class="flex gap-3.5">
-                    <img src="./assets/icons/moon.svg" alt="">
+                    <img src="./assets/icons/microscope.svg" alt="">
                     <p>Explore</p>
                 </li>
                 <li class="flex gap-3.5">
-                    <img src="./assets/icons/moon.svg" alt="">
+                    <img src="./assets/icons/graph.svg" alt="">
                     <p>Graph</p>
                 </li>
                 <li class="flex gap-3.5">
-                    <img src="./assets/icons/moon.svg" alt="">
+                    <img src="./assets/icons/sms-edit.svg" alt="">
                     <p>Messages</p>
                 </li>
                 <li class="flex gap-3.5">
-                    <img src="./assets/icons/moon.svg" alt="">
+                    <img src="./assets/icons/setting-2.svg" alt="">
                     <p>Setting</p>
                 </li>
             </ul>
-
-            <div class="flex gap-3.5">
+            <div class="flex items-center gap-3.5">
                 <img src="./assets/icons/logout.svg" width="20" height="20" alt="">
                 <p>Sign Out</p>
             </div>
         </div>
-        <div>body</div>
-        <div>add</div>
+        <div>
+            <header class="relative flex justify-between">
+                <input class="w-[660px] rounded-full px-[55px] align-middle" type="text" placeholder="Search for places">
+                <img class="self-center absolute left-[18px]" src="assets/icons/search-normal.svg" alt="">
+                <img class="p-[14px] rounded-full bg-black" src="assets/icons/setting-4.svg" alt="">
+            </header>
+            <p class="text-3xl mt-[58px] font-semibold">Discover World</p>
+            <div class="flex gap-x-[57px] mt-[24px]">
+                <p>Recommended</p>
+                <p>Popular Places</p>
+                <p>Trip’s</p>
+            </div>
+            <div class="grid grid-cols-3 mt-[38px]">
+                <div>
+                    <img src="assets/pics/moonlight.png" alt="">
+                    <p class="text-[22px] mt-[22px]">Moonlight Night</p>
+                    <div class="flex mt-[12px] gap-x-[10px]">
+                        <img src="assets/icons/location.svg" alt="">
+                        <p>Canada</p>
+                        <img class="ml-[20px]" src="assets/icons/note-2.svg" alt="">
+                        <p>4.7</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/pics/orange-mountain.png" alt="">
+                    <p class="text-[22px] mt-[22px]">Sahara Desert</p>
+                    <div class="flex gap-x-[10px] mt-[12px]">
+                        <img src="assets/icons/location.svg" alt="">
+                        <p>Africa</p>
+                        <img class="ml-[20px]" src="assets/icons/note-2.svg" alt="">
+                        <p>4.9</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/pics/night-moon.png" alt="">
+                    <p class="text-[22px] mt-[22px]">Night Camping</p>
+                    <div class="flex gap-x-[10px] mt-[12px]">
+                        <img src="assets/icons/location.svg" alt="">
+                        <p>New York</p>
+                        <img class="ml-[20px]" src="assets/icons/note-2.svg" alt="">
+                        <p>5.0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between items-center pt-[60px]">
+                <p class="text-[30px]">Event Dates</p>
+                <p class="px-7 py-3 rounded-full border border-solid border-inherit">January 15-2022</p>
+            </div>
+            <div class="mt-[46px] flex flex-row justify-between">
+                <div class="px-[18px] py-[21px]">
+                    <p>Mo</p>
+                    <p class="text-[25px]">12</p>
+                </div>
+                <div class="bg-[#18333E] text-white px-[18px] py-[21px] rounded-full flex flex-col items-center">
+                    <p>Tu</p>
+                    <p class="text-[25px]">13</p>
+                </div>
+                <div class="px-[18px] py-[21px] flex flex-col items-center">
+                    <p>We</p>
+                    <p class="text-[25px]">14</p>
+                </div>
+                <div class="px-[18px] py-[21px] flex flex-col items-center">
+                    <p>Th</p>
+                    <p class="text-[25px]">15</p>
+                </div>
+                <div class="px-[18px] py-[21px] flex flex-col items-center">
+                    <p>Fr</p>
+                    <p class="text-[25px]">16</p>
+                </div>
+                <div class="px-[18px] py-[21px] flex flex-col items-center">
+                    <p>St</p>
+                    <p class="text-[25px]">17</p>
+                </div>
+                <div class="px-[18px] py-[21px] flex flex-col items-center">
+                    <p>Su</p>
+                    <p class="text-[25px]">18</p>
+                </div>
+                <div class="px-[18px] py-[21px] flex flex-col items-center">
+                    <p>Mo</p>
+                    <p class="text-[25px]">19</p>
+                </div>
+                <div class="px-[18px] py-[21px] flex flex-col items-center">
+                    <p>Tu</p>
+                    <p class="text-[25px]">20</p>
+                </div>
+            </div>
+            <div class="flex h-[120px] mt-[55px] justify-between">
+                <div class="w-[457px] flex items-center bg-[#18333E] px-[23px] rounded-[25px]">
+                    <img src="assets/pics/Mask group.png" alt="">
+                    <div class="ml-[34px] text-white">
+                        <p>Netherlands Travel Tour</p>
+                        <p>4.7</p>
+                    </div>
+                    <p class="px-[9px] py-[16px] ml-[100px] bg-[#facc15] rounded-full">||</p>
+                </div>
+                <img class="rounded-[25px]" src="assets/pics/spooky-night-forest-background-with-full-moon_1308-78373.svg" alt="">
+                <img class="rounded-[25px]" src="assets/pics/flat-adventure-background-with-mountains_23-2149045825 1.png" alt="">
+            </div>
+        </div>
+        <div class="pl-[75px] pr-[30px]">
+            <header class="flex justify-between items-center">
+                <p class="border border-l-inherit"></p>
+                <img class=" p-[14px] rounded-full border border-inherit" src="assets/icons/location.svg" alt="">
+                <p>New York/ Dc</p>
+                <img class="p-[14px] rounded-full border border-inherit ml-[80px]" src="assets/icons/notification-bing.svg" alt="">
+                <img src="assets/pics/avatar.svg" alt="">
+            </header>
+            <div class="flex relative items-end">
+                <img class="mt-[58px] rounded-[25px]" src="assets/pics/mountains-landscape-sundown_52683-24164 1.png" alt="">
+                <div class="w-[326px] flex px-[17px] py-[12px] absolute bg-white/40 justify-between rounded-[15px] bottom-[34px] left-[32px]">
+                    <img src="assets/pics/Rectangle 22.png" alt="">
+                    <img src="assets/pics/Rectangle 23.png" alt="">
+                    <img src="assets/pics/Rectangle 24.png" alt="">
+                    <img src="assets/pics/Rectangle 25.png" alt="">
+                </div>
+                <img class="absolute left-[310px] bottom-[215px] bg-white/40 p-[14px] rounded-full" src="assets/icons/heart.svg" alt="">
+            </div>
+            <main class="relative mt-[20px]">
+                <div class="flex justify-between">
+                    <p class="text-[30px]">Brazil Forest</p>
+                    <img src="assets/icons/book-saved.svg" alt="">
+                </div>
+                <p class="w-[380px] mt-[10px]">I spend ten minutes or so doing a couple of Duolingo lessons in French so </p>
+                <div class="flex justify-between mt-[54px]">
+                    <div>
+                        <p>per/person</p>
+                        <p class="text-[40px]">$1540</p>
+                    </div>
+                    <p class="border border-[#18333E] border-x-[40px] border-y-[20px] rounded-full  text-[18px] bg-[#18333E] text-white self-center ">Book Travel</p>
+                </div>
+                <div class="mt-[50px] grid grid-cols-1 gap-[44px]">
+                    <div class="flex items-center">
+                        <img src="assets/pics/nature lake.png" alt="">
+                        <div class="ml-[10px]">
+                            <p class="text-[22px]">Nature Lake</p>
+                            <div class="flex items-center mt-[15px]">
+                                <img src="assets/icons/location.svg" alt="">
+                                <p>	Afghanistan</p>
+                            </div>
+                        </div>
+                        <img class="ml-auto mr-0 p-[15px] rounded-full border border-inherit" src="assets/icons/heart.svg" alt="">
+                    </div>
+                    <div class="flex items-center">
+                        <img src="assets/pics/camel ride.png" alt="">
+                        <div class="ml-[10px]">
+                            <p class="text-[22px]">Camel Ride</p>
+                            <div class="flex items-center mt-[15px]">
+                                <img src="assets/icons/location.svg" alt="">
+                                <p>Srilanka</p>
+                            </div>
+                        </div>
+                        <img class="ml-auto mr-0 p-[15px] rounded-full border border-inherit" src="assets/icons/heart.svg" alt="">
+                    </div>
+                    <div class="flex items-center">
+                        <img src="assets/pics/mid forest.png" alt="">
+                        <div class="ml-[10px]">
+                            <p class="text-[22px]">Mid Forest</p>
+                            <div class="flex items-center mt-[15px]">
+                                <img src="assets/icons/location.svg" alt="">
+                                <p>Brazil</p>
+                            </div>
+                        </div>
+                        <img class="ml-auto mr-0 p-[15px] rounded-full border border-inherit" src="assets/icons/heart.svg" alt="">
+                    </div>
+                </div>
+
+            </main>
+        </div>
     </main>
 </body>
 
