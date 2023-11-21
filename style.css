@@ -485,7 +485,6 @@ header {
 }
 
 .card:not(:nth-child(2)) {
-    border: 1px solid  #E9ECF2;
     padding-top: 24px;
     background-color: #fff;
 }
